@@ -37,7 +37,10 @@ export default function Admin(){
           })
           setTarefas(lista);
         })
-      }
+        return() => {
+          unsub();
+        }
+        }
     }
     loadTarefas();
   }, [])

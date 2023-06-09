@@ -29,6 +29,9 @@ export default function Private({ children }){
            setLoading(false);
            setSigned(false);
          }
+         return() => {
+          unsub();
+        }
       })
     }
 
